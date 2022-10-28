@@ -1,0 +1,22 @@
+<h3>Administracion de Articulos</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Borrar</th>
+            <th>Seleccionar</th>
+        </tr>
+    </thead>
+</table>
+<br>
+<div>
+    <p>Codigo: <input type="number" [(ngModel)]="codigo" /></p>
+    <p>Descripcion: <input type="text" [(ngModel)]="descripcion" /></p>
+    <p>Precio: <input type="number" [(ngModel)]="precio" /></p>
+    <p>
+        <button (click)="agregar()">Agregar</button>
+        <button>Modificar</button>
+    </p>
+</div>
