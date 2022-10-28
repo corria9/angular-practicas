@@ -8,6 +8,7 @@ import { ContadorComponent } from './contador/contador.component';
 import { FormsModule } from '@angular/forms';
 import { TablaComponent } from './tabla/tabla.component';
 import { DadoComponent } from './dado/dado.component';
+import { AppDadoComponent } from './app-dado/app-dado.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DadoComponent } from './dado/dado.component';
     ContadorComponent,
     TablaComponent,
     DadoComponent,
+    AppDadoComponent,
   ],
   imports: [
     BrowserModule,

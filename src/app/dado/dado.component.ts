@@ -7,11 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DadoComponent implements OnInit {
   @Input()
-  valor: number = 1;
+  valor: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {
-    this.valor = Math.trunc(Math.random() * 6) + 1;
+    
   }
 
 }
