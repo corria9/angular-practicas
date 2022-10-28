@@ -65,7 +65,7 @@ export class TablaComponent {
       alert("No existe un articulo con el codigo especficado.");
       return;
     }
-    
+
     articulo.descripcion = this.descripcion;
     articulo.precio = this.precio;
 
@@ -77,6 +77,10 @@ export class TablaComponent {
     this.codigo = 0;
     this.descripcion = '';
     this.precio = 0;
+  }
+
+  hayArticulos(){
+    return this.articulos.length > 0;
   }
 
 }
