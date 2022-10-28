@@ -16,7 +16,7 @@ import { DadoComponent } from './dado/dado.component';
     EmpleadoComponent,
     ContadorComponent,
     TablaComponent,
-    DadoComponent
+    DadoComponent,
   ],
   imports: [
     BrowserModule,
