@@ -7,6 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mi-app';
+  saludo = "Empleados desde un Componente";
 
-  saludo = "Hola, soy un texto desde el template"
+  nombre = 'Juan Armando';
+  edad = 32;
+  email = 'corria@gmail.com';
+  sueldos = [1700, 1600, 1900];
+  activo = true;
+  web = 'https://github.com/corria9';
+  menor = true;
+
+  esActivo(){
+    if(this.activo)
+      return 'Trabajador Activo';
+    else
+      return 'Trabajador Inactivo';
+  }
+
+  ultimos3Sueldos(){
+    let suma = 0;
+    for(let x = 0; x < this.sueldos.length; x++)
+      suma += this.sueldos[x];
+    return suma;  
+  }
 }

@@ -1,0 +1,16 @@
+<h3>Captura de Eevntos . Contador</h3>
+<p>{{contador}}</p>
+<button (click)="incrementar()">Incrementar</button>
+<button (click)="decrementar()">Decrementar</button>
+
+<hr>
+
+<h3>Ng Model</h3>
+<p>{{nombre}}</p>
+<input type="text" [(ngModel)]="nombre" />
+<div>
+    <h3>Lectura y Escritura de Datos</h3>
+    <p>Ingrese nombre: <input type="text" [(ngModel)]="nombre"></p>
+    <p>Ingrese apellido: <input type="text" [(ngModel)]="apellido"></p>
+    <p>Nombre Completo: {{nombre}}, {{apellido}}</p>
+</div>
